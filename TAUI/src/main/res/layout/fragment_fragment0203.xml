@@ -1,0 +1,701 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="cn.com.aiton.taui.fragment.Fragment0202">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2.5dp"
+                android:background="@color/line_white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/btn01"
+                android:gravity="center"
+                android:text="时基编号"
+                android:textSize="30sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2.5dp"
+                android:background="@color/line_white">
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/sp_day_basetime_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/btn01"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="2.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/line_white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2.5dp"
+                android:background="@color/line_white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/btn01"
+                android:gravity="center"
+                android:text="时段编号"
+                android:textSize="30sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2.5dp"
+                android:background="@color/line_white"/>
+
+            <Spinner
+                android:id="@+id/sp_day_schedule"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/btn01"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2.5dp"
+        android:background="@color/line_white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/light_blue"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/btn01"
+                android:gravity="center"
+
+                android:text="月份"
+                android:textSize="@dimen/month_tv_size"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <CheckBox android:background="@drawable/check_selector"
+                    android:id="@+id/cb_jan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="一月"/>
+
+                <CheckBox android:background="@drawable/check_selector"
+                    android:id="@+id/cb_feb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="二月"/>
+
+                <CheckBox android:background="@drawable/check_selector"
+                    android:id="@+id/cb_mar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="三月"/>
+
+                <CheckBox android:background="@drawable/check_selector"
+                    android:id="@+id/cb_apr"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="四月"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <CheckBox android:background="@drawable/check_selector"
+                        android:id="@+id/cb_may"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="五月"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <CheckBox android:background="@drawable/check_selector"
+                        android:id="@+id/cb_jun"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="六月"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <CheckBox android:background="@drawable/check_selector"
+                        android:id="@+id/cb_jul"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="七月"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <CheckBox android:background="@drawable/check_selector"
+                        android:id="@+id/cb_aug"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="八月"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <CheckBox android:background="@drawable/check_selector"
+                        android:id="@+id/cb_sep"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="九月"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <CheckBox android:background="@drawable/check_selector"
+                        android:id="@+id/cb_oct"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="十月"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <CheckBox android:background="@drawable/check_selector"
+                        android:id="@+id/cb_nov"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="十一月"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <CheckBox android:background="@drawable/check_selector"
+                        android:id="@+id/cb_dec"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="十一月"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/light_blue"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/btn01"
+                android:gravity="center"
+
+                android:text="日期"
+                android:textSize="@dimen/month_tv_size"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <CheckBox android:background="@drawable/check_selector"
+                    android:id="@+id/cb_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="1"/>
+
+                <CheckBox android:background="@drawable/check_selector"
+                    android:id="@+id/cb_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="2"/>
+
+                <CheckBox android:background="@drawable/check_selector"
+                    android:id="@+id/cb_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="3"/>
+
+                <CheckBox android:background="@drawable/check_selector"
+                    android:id="@+id/cb_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="4"/>
+
+                <CheckBox android:background="@drawable/check_selector"
+                    android:id="@+id/cb_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="5"/>
+
+                <CheckBox android:background="@drawable/check_selector"
+                    android:id="@+id/cb_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="6"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <CheckBox android:background="@drawable/check_selector"
+                        android:id="@+id/cb_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="7"
+                              android:checked="false"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <CheckBox android:background="@drawable/check_selector"
+                        android:id="@+id/cb_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="8"
+                              android:checked="false"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <CheckBox android:background="@drawable/check_selector"
+                        android:id="@+id/cb_9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="9"
+                              android:checked="false"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <CheckBox android:background="@drawable/check_selector"
+                        android:id="@+id/cb_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="10"
+                              android:checked="false"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <CheckBox android:background="@drawable/check_selector"
+                        android:id="@+id/cb_11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="11"
+                              android:checked="false"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <CheckBox android:background="@drawable/check_selector"
+                        android:id="@+id/cb_12"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="12"
+                              android:checked="false"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <CheckBox android:background="@drawable/check_selector"
+                    android:id="@+id/cb_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="13"/>
+
+                <CheckBox android:background="@drawable/check_selector"
+                    android:id="@+id/cb_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="14"/>
+
+                <CheckBox android:background="@drawable/check_selector"
+                    android:id="@+id/cb_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="15"/>
+
+                <CheckBox android:background="@drawable/check_selector"
+                    android:id="@+id/cb_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="16"/>
+
+                <CheckBox android:background="@drawable/check_selector"
+                    android:id="@+id/cb_17"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="17"/>
+
+                <CheckBox android:background="@drawable/check_selector"
+                    android:id="@+id/cb_18"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="18"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <CheckBox android:background="@drawable/check_selector"
+                    android:id="@+id/cb_19"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="19"/>
+
+                <CheckBox android:background="@drawable/check_selector"
+                    android:id="@+id/cb_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="20"/>
+
+                <CheckBox android:background="@drawable/check_selector"
+                    android:id="@+id/cb_21"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="21"/>
+
+                <CheckBox android:background="@drawable/check_selector"
+                    android:id="@+id/cb_22"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="22"/>
+
+                <CheckBox android:background="@drawable/check_selector"
+                    android:id="@+id/cb_23"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="23"/>
+
+                <CheckBox android:background="@drawable/check_selector"
+                    android:id="@+id/cb_24"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="24"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <CheckBox android:background="@drawable/check_selector"
+                    android:id="@+id/cb_25"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="25"/>
+
+                <CheckBox android:background="@drawable/check_selector"
+                    android:id="@+id/cb_26"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="26"/>
+
+                <CheckBox android:background="@drawable/check_selector"
+                    android:id="@+id/cb_27"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="27"/>
+
+                <CheckBox android:background="@drawable/check_selector"
+                    android:id="@+id/cb_28"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="28"/>
+
+                <CheckBox android:background="@drawable/check_selector"
+                    android:id="@+id/cb_29"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="29"/>
+
+                <CheckBox android:background="@drawable/check_selector"
+                    android:id="@+id/cb_30"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="30"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <CheckBox android:background="@drawable/check_selector"
+                        android:id="@+id/cb_31"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="31"
+                              android:checked="false"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:background="@color/btn01"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:background="@color/btn01"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:background="@color/btn01"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:background="@color/btn01"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:background="@color/btn01"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2.5dp"
+        android:background="@color/line_white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <Button
+            android:textColor="@color/white"
+
+            android:id="@+id/btDayBtnRead"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_secector"
+            android:gravity="center"
+            android:text="@string/sendtotsc"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:layout_width="2.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/line_white"/>
+
+        <Button
+            android:textColor="@color/white"
+
+            android:id="@+id/btDayBtnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_secector"
+            android:gravity="center"
+            android:text="@string/submit"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2.5dp"
+        android:background="@color/line_white"/>
+
+</LinearLayout>
